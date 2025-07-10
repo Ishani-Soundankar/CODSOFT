@@ -2,6 +2,9 @@
 
 This repository contains the tasks I completed during my Web Development Internship at CodSoft.
 
+Task 1 : 
+
+
 Task 2: Landing Page - ReCraft
 
 A visually aesthetic landing page for a fictional DIY handmade crafts brand called ReCraft.  
