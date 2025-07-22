@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Enhanced Calculator | Ishani Soundankar</title>
+  <link rel="stylesheet" href="3_style.css" />
+</head>
+<body>
+  <!-- Light/Dark Mode Toggle -->
+  <div class="mode-toggle">
+    <label class="switch">
+      <input type="checkbox" id="mode-switch">
+      <span class="slider"></span>
+    </label>
+    <span id="mode-label">Light Mode</span>
+  </div>
+
+  <!-- Calculator Container -->
+  <div class="calculator">
+    <h1 class="title">Enhanced Calculator</h1>
+    <div class="display" id="display">0</div>
+
+    <!-- Buttons Grid -->
+    <div class="buttons">
+      <button onclick="clearDisplay()">C</button>
+      <button onclick="deleteLast()">DEL</button>
+      <button onclick="appendOperator('%')">%</button>
+      <button onclick="appendOperator('/')">/</button>
+
+      <button onclick="appendNumber('7')">7</button>
+      <button onclick="appendNumber('8')">8</button>
+      <button onclick="appendNumber('9')">9</button>
+      <button onclick="appendOperator('*')">*</button>
+
+      <button onclick="appendNumber('4')">4</button>
+      <button onclick="appendNumber('5')">5</button>
+      <button onclick="appendNumber('6')">6</button>
+      <button onclick="appendOperator('-')">-</button>
+
+      <button onclick="appendNumber('1')">1</button>
+      <button onclick="appendNumber('2')">2</button>
+      <button onclick="appendNumber('3')">3</button>
+      <button onclick="appendOperator('+')">+</button>
+
+      <button onclick="appendNumber('0')" class="span-two">0</button>
+      <button onclick="appendNumber('.')">.</button>
+      <button onclick="calculate()">=</button>
+    </div>
+  </div>
+
+  <!-- History Section -->
+  <div class="history">
+    <h2>Calculation History</h2>
+    <ul id="history-list"></ul>
+  </div>
+
+  <!-- JavaScript File -->
+  <script src="3_script.js"></script>
+</body>
+</html>
